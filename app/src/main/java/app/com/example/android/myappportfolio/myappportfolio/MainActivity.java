@@ -38,9 +38,33 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void sendMessage(View view) {
+    public void sendMessage_capstone(View view) {
+        showToast("This button will launch my capstone app!");
+    }
+
+    public void sendMessage_media_streamer(View view) {
+        showToast("This button will launch the media streamer!");
+    }
+
+    public void sendMessage_super_duo1(View view) {
+        showToast("This button will launch the super duo 1!");
+    }
+
+    public void sendMessage_super_duo2(View view) {
+        showToast("This button will launch the super duo 2!");
+    }
+
+    public void sendMessage_ant_terminator(View view) {
+        showToast("This button will launch the ant terminator!");
+    }
+
+    public void sendMessage_materialize(View view) {
+        showToast("This button will launch materialize!");
+    }
+
+    private void showToast(String s) {
         Context context = getApplicationContext();
-        CharSequence text = "This button will launch my capstone app!";
+        CharSequence text = s;
         int duration = Toast.LENGTH_SHORT;
 
         Toast toast = Toast.makeText(context, text, duration);

@@ -1,18 +1,22 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-    android:background="#ffdfeaf1">
+    android:background="#ffdfeaf1"
+    android:orientation="vertical">
 
-    <TextView android:text="@string/my_title" android:layout_width="match_parent"
+    <TextView
+        android:text="@string/my_title"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:textAlignment="center"
         android:gravity="center_horizontal"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:id="@+id/my_title" />
+        android:id="@+id/my_title"
+        />
 
     <Button
         android:layout_width="wrap_content"
@@ -22,9 +26,12 @@
         android:layout_below="@+id/my_title"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="31dp"
-        android:background="#F08C35"
-        android:width="200dp"
-        android:textColor="#fff" />
+        android:background="@color/background_yellow"
+        android:width="@dimen/button_width"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        android:onClick="sendMessage_media_streamer"
+        />
 
     <Button
         android:layout_width="wrap_content"
@@ -33,10 +40,13 @@
         android:id="@+id/super_duo1"
         android:layout_below="@+id/media_streamer"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:width="200dp"
+        android:layout_marginTop="@dimen/top_margin_button"
+        android:width="@dimen/button_width"
         android:textColor="#fff"
-        android:background="#F08C35" />
+        android:background="@color/background_yellow"
+        android:layout_gravity="center_horizontal"
+        android:onClick="sendMessage_super_duo1"
+        />
 
     <Button
         android:layout_width="wrap_content"
@@ -45,10 +55,13 @@
         android:id="@+id/super_duo2"
         android:layout_below="@+id/super_duo1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:width="200dp"
+        android:layout_marginTop="@dimen/top_margin_button"
+        android:width="@dimen/button_width"
         android:textColor="#fff"
-        android:background="#F08C35" />
+        android:background="@color/background_yellow"
+        android:layout_gravity="center_horizontal"
+        android:onClick="sendMessage_super_duo2"
+        />
 
     <Button
         android:layout_width="wrap_content"
@@ -57,10 +70,13 @@
         android:id="@+id/ant_terminator"
         android:layout_below="@+id/super_duo2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:width="200dp"
+        android:layout_marginTop="@dimen/top_margin_button"
+        android:width="@dimen/button_width"
         android:textColor="#fff"
-        android:background="#F08C35" />
+        android:background="#F08C35"
+        android:layout_gravity="center_horizontal"
+        android:onClick="sendMessage_ant_terminator"
+        />
 
     <Button
         android:layout_width="wrap_content"
@@ -69,10 +85,13 @@
         android:id="@+id/materialize"
         android:layout_below="@+id/ant_terminator"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:width="200dp"
+        android:layout_marginTop="@dimen/top_margin_button"
+        android:width="@dimen/button_width"
         android:textColor="#fff"
-        android:background="#F08C35" />
+        android:background="#F08C35"
+        android:layout_gravity="center_horizontal"
+        android:onClick="sendMessage_materialize"
+        />
 
     <Button
         android:layout_width="wrap_content"
@@ -81,10 +100,12 @@
         android:id="@+id/capstone"
         android:layout_below="@+id/materialize"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:width="200dp"
+        android:layout_marginTop="@dimen/top_margin_button"
+        android:width="@dimen/button_width"
         android:textColor="#fff"
         android:background="#f00606"
-        android:onClick="sendMessage"/>
+        android:layout_gravity="center_horizontal"
+        android:onClick="sendMessage_capstone"
+        />
 
-</RelativeLayout>
+</LinearLayout>
